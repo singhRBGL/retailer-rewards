@@ -47,10 +47,11 @@ rewards:
 * [Get Total Summary per User - https://localhost/rewards/quatrely](https://localhost/rewards/quatrely)
 
 ### Testing Layer
-
 The core logic is to test the logic behind rewards calculation which is covered in testing folder.
-
 Command to test at root directory: `mvn test`
+
+### Logging
+SLF4J with Log4j2 is used to log statements.
 
 ### Start the Project
 The entire application is backed by Spring boot which provides the MVC framework for us to start 
