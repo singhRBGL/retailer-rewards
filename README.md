@@ -78,5 +78,7 @@ The entire application is backed by Spring boot which provides the MVC framework
 and test the application to test right away with inbuilt Tomcat, please execute the below to start 
 the application and check the above URL's to verify the application.
 
+Command to build at root directory: `mvn clean install`
+
 Command to run at root directory: `mvn spring-boot:run`
 
