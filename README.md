@@ -21,15 +21,19 @@ Application implements web security also which only allows URI starting with "/r
 
 ### Exception Handling
 Generic exception handler is provided to handle any exception, which suggests to contact Admin.
+
 While exception handling it demonstrates the capability to send custom http status and message.
 
 ### Database
 Created a local database using H2 which will be initialized by loading sample purchases.
+
 Database design is flat.
 
 ### Configuration
 Admin may configure the duration for which it wants rewards points.
+
 Admin may configure the default point and points for purchase limits.
+
 Admin may configure the default amount for purchase limit.
 
 Following are configuration parameters
@@ -52,6 +56,7 @@ rewards:
 
 ### Testing Layer
 The core logic is to test the logic behind rewards calculation which is covered in testing folder.
+
 Command to test at root directory: `mvn test`
 
 ### Logging
