@@ -33,6 +33,15 @@ public class RewardConfig {
 		private int defaultPoint;
 		private int firstLimit;
 		private int secondLimit;
+		private int duration;
+
+		public int getDuration() {
+			return duration;
+		}
+
+		public void setDuration(int duration) {
+			this.duration = duration;
+		}
 
 		public int getDefaultPoint() {
 			return defaultPoint;

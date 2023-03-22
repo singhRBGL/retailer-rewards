@@ -9,12 +9,18 @@ spring:
       use-new-id-generator-mappings: true
     defer-datasource-initialization: true
 server:
-  port: 8082
+  port: 443
+  ssl:
+    key-store: keystore.p12
+    key-store-password: Ravish01
+    keyStoreType: PKCS12
+    keyAlias: rks  
 rewards:
   point:
     default-point: 0
     first-limit: 1
     second-limit: 2
+    duration: -3
   price:
     first-lower-limit: 50
     first-upper-limit: 100

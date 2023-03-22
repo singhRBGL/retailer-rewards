@@ -1,5 +1,5 @@
 Configuration:
-  status: default
+  status: debug
 
   appenders:
     Console:

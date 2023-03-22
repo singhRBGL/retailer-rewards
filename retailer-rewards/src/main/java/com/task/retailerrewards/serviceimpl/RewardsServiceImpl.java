@@ -12,6 +12,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.task.retailerrewards.config.RewardConfig;
 import com.task.retailerrewards.dto.RewardsSummary;
 import com.task.retailerrewards.model.Purchase;
 import com.task.retailerrewards.service.PurchaseService;
@@ -29,6 +30,9 @@ public class RewardsServiceImpl implements RewardsMonthlyForQuaterService, Rewar
 
 	@Autowired
 	RewardCalculator rewardCalculator;
+	
+	@Autowired
+	private RewardConfig rewardConfig;
 
 	/**
 	 * Returns rewards for each customer per month for a quater
@@ -71,7 +75,7 @@ public class RewardsServiceImpl implements RewardsMonthlyForQuaterService, Rewar
 		Date todayDate = new Date(System.currentTimeMillis());
 
 		Calendar c= Calendar.getInstance();
-		c.add(Calendar.MONTH, -3);
+		c.add(Calendar.MONTH, rewardConfig.getPoint().getDuration());
 		java.util.Date utilDate=c.getTime();
 		Date threeMonthOldDate = new Date(utilDate.getTime());
 		
