@@ -24,6 +24,9 @@ Generic exception handler is provided to handle any exception, which suggests to
 
 While exception handling it demonstrates the capability to send custom http status and message.
 
+![Error Screen](https://github.com/singhRBGL/retailer-rewards/blob/main/retailer-rewards/src/main/resources/images/Screenshot%202023-03-21%20163418.png?raw=true "Error Screen")
+
+
 ### Database
 Created a local database using H2 which will be initialized by loading sample purchases.
 
@@ -77,6 +80,8 @@ SLF4J with Log4j2 is used to log statements.
 The entire application is backed by Spring boot which provides the MVC framework for us to start 
 and test the application to test right away with inbuilt Tomcat, please execute the below to start 
 the application and check the above URL's to verify the application.
+
+Command to build at root directory: `mvn clean install`
 
 Command to run at root directory: `mvn spring-boot:run`
 
