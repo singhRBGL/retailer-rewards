@@ -7,12 +7,16 @@ spent between $50 and $100 in each transaction.
 
 # Application
 Application is developed on Spring boot to implement REST architecture and REST services. 
+
 Application uses Hibernate ORM to perform all DB operations.
+
 Application is based on SOLID and YAGNI principals. 
+
 Application implements Layered architecture.
 
 ### Security
 Application is secured by https protocol.
+
 Application implements web security also which only allows URI starting with "/rewards"
 
 ### Exception Handling
