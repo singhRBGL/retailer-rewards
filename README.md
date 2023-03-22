@@ -24,6 +24,9 @@ Generic exception handler is provided to handle any exception, which suggests to
 
 While exception handling it demonstrates the capability to send custom http status and message.
 
+![Error Screen](https://github.com/singhRBGL/retailer-rewards/blob/main/retailer-rewards/src/main/resources/images/Screenshot%202023-03-21%20163418.png?raw=true "Error Screen")
+
+
 ### Database
 Created a local database using H2 which will be initialized by loading sample purchases.
 
