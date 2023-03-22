@@ -37,16 +37,27 @@ Admin may configure the default point and points for purchase limits.
 Admin may configure the default amount for purchase limit.
 
 Following are configuration parameters
+
 rewards:
+
   point:
+  
     default-point: 0
+    
     first-limit: 1
+    
     second-limit: 2
+    
     duration: -3
+    
   price:
+  
     first-lower-limit: 50
+    
     first-upper-limit: 100
+    
     second-lower-limit: 100
+    
 
 ### Retailer Rewards End Points:
 
